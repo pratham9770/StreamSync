@@ -5,16 +5,17 @@ import { Input } from "@/components/ui/input";
 import { Users, Radio, Headphones } from "lucide-react";
 import { Appbar } from "./components/Appbar";
 import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
-import { authOptions } from "./lib/auth-options";
+import { Redirect } from "./components/Redirect";
+
 
 export default async function LandingPage() {
-  const session = await getServerSession(authOptions);
+  //const session = await getServerSession(authOptions);
  
 
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
-      <Appbar showThemeSwitch={false} />
+      <Appbar  />
+      <Redirect/>
       <main className="flex-1 py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
