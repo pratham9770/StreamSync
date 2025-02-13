@@ -7,6 +7,8 @@ StreamSync is a Music SaaS platform designed to revolutionize audience interacti
 - Manage live streams.
 - Enable audience participation through voting.
 - Foster engagement by giving fans the ability to influence the playlist in real time.
+![image](https://github.com/user-attachments/assets/fcac1cdb-96a8-4b25-a194-9bc677e1e504)
+
 
 ## Features
 1. **User Authentication**: Secure login and registration powered by modern authentication methods.
