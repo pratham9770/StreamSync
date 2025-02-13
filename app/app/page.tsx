@@ -1,6 +1,7 @@
+
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
 //@ts-ignore
 import { Users, Radio, Headphones } from "lucide-react";
 import { Appbar } from "./components/Appbar";
@@ -21,11 +22,11 @@ export default async function LandingPage() {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
-                Let Your Fans Choose the Beat
+              Bring Everyone Together with the Rhythm of Choice
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
                 Empower your audience to curate your music stream. Connect with
-                fans like never before.
+                your friends like never before.
               </p>
             </div>
             <div className="space-x-4">
@@ -92,21 +93,8 @@ export default async function LandingPage() {
                   ref={mailRef}
                   type="email"
                 /> */}
-              <Link
-                href={{
-                  pathname: "/auth",
-                  query: {
-                    authType: "signUp",
-                  },
-                }}
-              >
-                <Button
-                  type="submit"
-                  className="bg-purple-600 text-white hover:bg-purple-700"
-                >
-                  Sign Up
-                </Button>
-              </Link>
+            
+                
               {/* </form> */}
             </div>
           </div>
