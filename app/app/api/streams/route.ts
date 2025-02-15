@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
         if (!data || typeof data !== "object") {
             throw new TypeError("Payload must be an object");
         }
-        alert(creatorId);
+       
 
         const { creatorId, url } = data;
 
