@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod"; // For schema validation
 import { prismaClient } from "@/app/lib/db";
-//@ts-expect-error
+// @ts-expect-error: No type definitions available for youtube-search-api
 import youtubesearchapi from "youtube-search-api";
+
 import { YT_REGEX } from "@/app/lib/utils";
 import { getServerSession } from "next-auth";
 
