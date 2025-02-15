@@ -38,6 +38,7 @@ try{
 
 }
 catch(e){
+    console.log(e);
     return NextResponse.json({
         message:"Error while downvoting"},
         {
