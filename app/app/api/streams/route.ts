@@ -15,6 +15,7 @@ const CreateStreamSchema = z.object({
 });
 const MAX_QUEUE_LEN=20;
 export async function POST(req: NextRequest) {
+    
     try {
         const bodyText = await req.text();
         if (!bodyText) {
@@ -40,6 +41,7 @@ export async function POST(req: NextRequest) {
        
 
         const { creatorId, url } = data;
+        alert(creatorId}
 
         if (!creatorId || !url) {
             return NextResponse.json(
