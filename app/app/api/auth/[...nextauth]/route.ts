@@ -5,11 +5,16 @@ import { prismaClient } from "@/app/lib/db";
 const handler = NextAuth({
     providers: [
         GoogleProvider({
-            clientId: process.env.GOOGLE_CLIENT_ID ?? "",
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? ""
+            clientId: "213628529192-98676940lru6v4ni9i86k6jbsekcrfme.apps.googleusercontent.com",
+
+
+
+
+
+            clientSecret: "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"
         })
     ],
-    secret: process.env.NEXTAUTH_SECRET ?? "secret",
+    secret: "heykikidoyouloveme" ,
     callbacks: {
         async signIn(params) {
             if (!params.user.email) {
