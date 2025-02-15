@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
        
 
         const { creatorId, url } = data;
-        alert(creatorId}
+        console.log(creatorId)
 
         if (!creatorId || !url) {
             return NextResponse.json(
