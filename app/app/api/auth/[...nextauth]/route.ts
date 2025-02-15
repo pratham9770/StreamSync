@@ -24,7 +24,7 @@ const handler = NextAuth({
                     }
                 });
             } catch (e) {
-                // Handle any errors that occur during the user creation
+                console.log(e);                // Handle any errors that occur during the user creation
             }
             return true; // Allow sign-in if everything is successful
         }
