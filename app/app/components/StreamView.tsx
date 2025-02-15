@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect,  useState } from "react";
 import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
 import { Card, CardContent } from "@/app/components/ui/card";
 import { ThumbsUp, ThumbsDown, Share2, Play } from "lucide-react";
-import axios from "axios";
+//import axios from "axios";
 import YouTube from "react-youtube";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -72,7 +72,7 @@ export default function StreamView({
       refreshStreams();
     }, REFRESH_INTERVAL);
     return () => clearInterval(interval);
-  }, []);
+  }, [refreshStreams]);
 
   const handleStateChange = (event: any) => {
     if (event.data === 0) {
