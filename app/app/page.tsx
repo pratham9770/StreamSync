@@ -1,11 +1,11 @@
 
 import Link from "next/link";
 import { Button } from "@/app/components/ui/button";
-import { Input } from "@/app/components/ui/input";
-//@ts-ignore
+//import { Input } from "@/app/components/ui/input";
+//@ts-expect-error
 import { Users, Radio, Headphones } from "lucide-react";
 import { Appbar } from "./components/Appbar";
-import { getServerSession } from "next-auth";
+//import { getServerSession } from "next-auth";
 import { Redirect } from "./components/Redirect";
 
 
