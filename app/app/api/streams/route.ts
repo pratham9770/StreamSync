@@ -37,6 +37,7 @@ export async function POST(req: NextRequest) {
         if (!data || typeof data !== "object") {
             throw new TypeError("Payload must be an object");
         }
+        alert(creatorId);
 
         const { creatorId, url } = data;
 
@@ -90,6 +91,7 @@ export async function POST(req: NextRequest) {
                 bigImg: thumbnails[thumbnails.length - 1].url ?? "<https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_640.jpg>"
             }
         });
+        
 
         return NextResponse.json({
             ...stream,
