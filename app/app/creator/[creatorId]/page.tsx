@@ -10,5 +10,7 @@ export default function CreatorPage({
     }
 }) {
     return <div> 
+        alert(creatorId)
+        
         <StreamView creatorId={creatorId}/></div>
 }
