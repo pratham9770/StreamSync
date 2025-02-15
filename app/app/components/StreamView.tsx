@@ -256,7 +256,7 @@ export default function StreamView({
                 </h1>
                 <Button
                   onClick={handleShare}
-                  className="bg-purple-700 hover:bg-pink-800 text-white"
+                  className="bg-purple-700 hover:bg-purple-800 text-white"
                 >
                   <Share2 className="mr-2 h-4 w-4" /> Share
                 </Button>
