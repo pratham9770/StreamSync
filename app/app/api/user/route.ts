@@ -27,7 +27,7 @@ export const GET = async () => {
   }
 
   return NextResponse.json({
-    alert(user.id);
+    //alert(user.id);
     user: { id: user.id, email: user.email },
   });
 };
