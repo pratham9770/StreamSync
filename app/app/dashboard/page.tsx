@@ -40,6 +40,7 @@ export default function Component() {
   if (!creatorId) {
     return <p>Unable to retrieve creator information.</p>;
   }
+  alert(creatorId);
 
   return <StreamView creatorId={creatorId} playVideo={true} />;
 }
