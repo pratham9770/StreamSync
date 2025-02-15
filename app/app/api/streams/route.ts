@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod"; // For schema validation
 import { prismaClient } from "@/app/lib/db";
-//@ts-ignore
+//@ts-expect-error
 import youtubesearchapi from "youtube-search-api";
 import { YT_REGEX } from "@/app/lib/utils";
 import { getServerSession } from "next-auth";
@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
         try {
             parsedBody = JSON.parse(bodyText);
         } catch (error) {
+            console.log(error);
             return NextResponse.json(
                 { message: "Request body is not valid JSON" },
                 { status: 400 }
