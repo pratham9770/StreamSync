@@ -52,6 +52,7 @@ export default function StreamView({
     if (json.streams && Array.isArray(json.streams)) {
       setQueue(
         json.streams.length > 0
+        /* eslint-disable  @typescript-eslint/no-explicit-any */
           ? json.streams.sort((a: any, b: any) => b.upvotes - a.upvotes)
           : [],
       );
@@ -73,7 +74,7 @@ export default function StreamView({
     }, REFRESH_INTERVAL);
     return () => clearInterval(interval);
   }, [refreshStreams]);
-
+/* eslint-disable  @typescript-eslint/no-explicit-any */
   const handleStateChange = (event: any) => {
     if (event.data === 0) {
       playNext(); // Trigger next video when the current one ends
